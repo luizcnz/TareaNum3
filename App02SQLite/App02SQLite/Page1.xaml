@@ -29,9 +29,9 @@
 
                                                     <StackLayout Orientation="Horizontal">
                                                         <Label TextColor="#AEA3FA" Text="{Binding fecha}" />
-
-                                                        <Label TextColor="#AEA3FA" Text="{Binding correo}" />
                                                     </StackLayout>
+                                                    <Label TextColor="#AEA3FA" Text="{Binding correo}" />
+                                                    <Label TextColor="#AEA3FA" Text="{Binding direccion}" />
                                                 </StackLayout>
                                             </StackLayout>
                                             
