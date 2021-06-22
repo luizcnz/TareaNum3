@@ -7,7 +7,7 @@
         <StackLayout BackgroundColor="#000000">
             <Frame BackgroundColor="#121212" Margin="20" CornerRadius="10" BorderColor="#6649FF">
                 <StackLayout>
-                    <ListView x:Name="ListaPersonas" ItemSelected="ListaPersonas_ItemSelected" RowHeight="100" BackgroundColor="#191919" SeparatorColor="#838FEB" VerticalScrollBarVisibility="Always" Margin="-15,-15,-15,10">
+                    <ListView x:Name="ListaPersonas" ItemSelected="ListaPersonas_ItemSelected" RowHeight="120" BackgroundColor="#191919" SeparatorColor="#838FEB" VerticalScrollBarVisibility="Always" Margin="-15,-15,-15,10">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
@@ -30,8 +30,12 @@
                                                     <StackLayout Orientation="Horizontal">
                                                         <Label TextColor="#AEA3FA" Text="{Binding fecha}" />
                                                     </StackLayout>
-                                                    <Label TextColor="#AEA3FA" Text="{Binding correo}" />
-                                                    <Label TextColor="#AEA3FA" Text="{Binding direccion}" />
+
+                                                    <StackLayout Orientation="Horizontal">
+                                                        <Label TextColor="#AEA3FA" Text="{Binding correo}" />
+                                                        <Label TextColor="#AEA3FA" Text="{Binding direccion}" />
+                                                    </StackLayout>
+                                                    
                                                 </StackLayout>
                                             </StackLayout>
                                             
