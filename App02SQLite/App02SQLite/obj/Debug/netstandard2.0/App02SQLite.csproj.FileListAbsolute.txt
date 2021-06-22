@@ -1,0 +1,16 @@
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\bin\Debug\netstandard2.0\App02SQLite.deps.json
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\bin\Debug\netstandard2.0\App02SQLite.dll
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\bin\Debug\netstandard2.0\ref\App02SQLite.dll
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\bin\Debug\netstandard2.0\App02SQLite.pdb
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\obj\Debug\netstandard2.0\App02SQLite.csproj.AssemblyReference.cache
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\obj\Debug\netstandard2.0\App02SQLite.AssemblyInfoInputs.cache
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\obj\Debug\netstandard2.0\App02SQLite.AssemblyInfo.cs
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\obj\Debug\netstandard2.0\App02SQLite.csproj.CoreCompileInputs.cache
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\obj\Debug\netstandard2.0\App02SQLite.dll
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\obj\Debug\netstandard2.0\ref\App02SQLite.dll
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\obj\Debug\netstandard2.0\App02SQLite.pdb
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\obj\Debug\netstandard2.0\Page1.xaml.g.cs
+C:\Users\BLK\source\repos\App02SQLite\App02SQLite\App02SQLite\obj\Debug\netstandard2.0\Page2.xaml.g.cs

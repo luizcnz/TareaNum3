@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App02SQLite.Page1">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="#000000">
+            <Frame BackgroundColor="#121212" Margin="20" CornerRadius="10" BorderColor="#6649FF">
+                <StackLayout>
+                    <ListView x:Name="ListaPersonas" ItemSelected="ListaPersonas_ItemSelected" RowHeight="100" BackgroundColor="#191919" SeparatorColor="#838FEB" VerticalScrollBarVisibility="Always" Margin="-15,-15,-15,10">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid BackgroundColor="#121212" >
+                                        <StackLayout Margin="15" VerticalOptions="Center">
+
+                                            <StackLayout Orientation="Horizontal">
+                                                <Frame BackgroundColor="#3E3161" CornerRadius="10">
+                                                    <Label TextColor="#AEA3FA" Text="{Binding id}" FontSize="20" FontAttributes="Bold"  />
+                                                </Frame>
+                                                <StackLayout VerticalOptions="Center">
+                                                    <StackLayout Orientation="Horizontal">
+                                                        <Label TextColor="#AEA3FA" Text="{Binding nombre}" />
+
+                                                        <Label TextColor="#AEA3FA" Text="{Binding apellido}" />
+
+                                                        <Label TextColor="#AEA3FA" Text="{Binding edad}" />
+                                                    </StackLayout>
+
+                                                    <StackLayout Orientation="Horizontal">
+                                                        <Label TextColor="#AEA3FA" Text="{Binding fecha}" />
+
+                                                        <Label TextColor="#AEA3FA" Text="{Binding correo}" />
+                                                    </StackLayout>
+                                                </StackLayout>
+                                            </StackLayout>
+                                            
+                                        </StackLayout>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <Frame BorderColor="#3E77F3" BackgroundColor="#121212" Margin="-20" CornerRadius="10" >
+                        <StackLayout >
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="10,0,10,10">
+                                <Label TextColor="#AEA3FA" Text="Ha seleccionado a: " FontSize="20"/>
+                                <Label TextColor="#AEA3FA" x:Name="selleccion" FontSize="20" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Button x:Name="btnmod" Text="Modificar Datos" 
+                                                    BackgroundColor="#af95cf" Margin="10,0,10,0" FontSize="15" Clicked="btnmod_Clicked" FontAttributes="Bold" TextColor="#351B58"/>
+
+                                <Button x:Name="btnborrar" Text="Borrar Datos" 
+                                                BackgroundColor="#af95cf" Margin="10,0,10,0" FontSize="15" Clicked="btnborrar_Clicked" FontAttributes="Bold" TextColor="#351B58"/>
+                            </StackLayout>
+                            
+                        </StackLayout>
+                    </Frame>
+
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

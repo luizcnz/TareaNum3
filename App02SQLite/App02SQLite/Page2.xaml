@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App02SQLite.Page2"
+             Title="Page2">
+    <ContentPage.Content>
+
+        <StackLayout 
+        BackgroundColor="Black">
+
+            <Frame Margin="20" BackgroundColor="#1b1b1b" CornerRadius="15" BorderColor="#7B7BF8" >
+                <StackLayout BackgroundColor="#1b1b1b" >
+
+                    <Frame BackgroundColor="#8034eb" Padding="10" CornerRadius="9" BorderColor="#000000">
+                        <Label Text="Modificacion" HorizontalTextAlignment="Center" TextColor="#BBDEFF" FontSize="36"/>
+                    </Frame>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="ID(No Modificable): " FontSize="18" Padding="10,5,0,5" TextColor="#af95cf"/>
+                        <Entry FontSize="18"  TextColor="#85d0ff" x:Name="item" Text="{Binding DatosID}" IsReadOnly="true" WidthRequest="-1"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Nombre: " FontSize="18" Padding="10,5,0,5" TextColor="#af95cf"/>
+                        <Entry FontSize="18"  TextColor="#85d0ff" x:Name="nombre2" Text="{Binding DatosNombre}" WidthRequest="150"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Apellido: " FontSize="18" Padding="10,5,0,5" TextColor="#af95cf"/>
+                        <Entry FontSize="18"  TextColor="#85d0ff" x:Name="apellido2" Text="{Binding DatosApellido}" WidthRequest="150"/>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="#1b1b1b" Orientation="Horizontal" >
+
+                        <Label Text="Edad:" FontSize="18" Padding="10,5,10,5" TextColor="#af95cf"/>
+                        <Entry FontSize="18" MaxLength="3"  TextColor="#af95cf" x:Name="edad2" Text="{Binding DatosEdad}" WidthRequest="50"/>
+
+
+                        <Label Text="Fecha:" FontSize="18" Padding="10,5,10,5" TextColor="#af95cf"/>
+                        <DatePicker TextColor="#85d0ff" MinimumDate="01/01/1900" MaximumDate="12/31/2100" x:DataType="DatePicker" Format="yy/MM/dd" x:Name="fecha2"/>
+
+                    </StackLayout>
+
+                    <Label Text="Correo" FontSize="18" Padding="10,5,30,5" TextColor="#af95cf"/>
+                    <Entry FontSize="18"  TextColor="#85d0ff" x:Name="correo2" Text="{Binding DatosCorreo}"/>
+
+                    <Label Text="Direccion" FontSize="18" Padding="10,5,30,5" TextColor="#af95cf"/>
+                    <Entry FontSize="18"  TextColor="#85d0ff" x:Name="direccion2" Text="{Binding DatosDireccion}"/>
+
+                    <Label Text="" FontSize="10" Padding="10,0,10,0" TextColor="#af95cf"/>
+
+                    <Button x:Name="btnmodificar"  
+                    Text="Modificar Datos" 
+                    BackgroundColor="#af95cf" 
+                    Margin="70,0,70,0"
+                    FontSize="20" Clicked="btnmodificar_Clicked" CornerRadius="10" FontAttributes="Bold" TextColor="#472171"/>
+
+
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

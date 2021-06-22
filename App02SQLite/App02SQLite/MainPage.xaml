@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App02SQLite.MainPage" BackgroundColor="#B171E4">
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            Text="Ver Lista" x:Name="toolbarmenu"
+            Order="Primary"
+            Priority="0"
+            Clicked="toolbarmenu_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout 
+        BackgroundColor="Black">
+
+        <Frame Margin="20" BackgroundColor="#1b1b1b" CornerRadius="15" BorderColor="#7B7BF8" >
+            <StackLayout BackgroundColor="#1b1b1b" >
+
+                <Frame BackgroundColor="#8034eb" Padding="10" CornerRadius="9" BorderColor="#000000">
+                    <Label Text="Prueba en SQLite" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                </Frame>
+
+
+                <Label Text="Nombre" FontSize="18" Padding="10,30,0,5" TextColor="#af95cf"/>
+                <Entry FontSize="18"  TextColor="#85d0ff" x:Name="nombre"/>
+
+                <Label Text="Apellido" FontSize="18" Padding="10,10,30,5" TextColor="#af95cf"/>
+                <Entry FontSize="18"  TextColor="#85d0ff" x:Name="apellido"/>
+
+                <StackLayout BackgroundColor="#1b1b1b" Orientation="Horizontal" HorizontalOptions="Fill" IsTabStop="True" >
+
+                    <Label Text="Edad:" FontSize="18" Padding="10,10,20,5" TextColor="#af95cf"/>
+                    <Entry FontSize="18" MaxLength="3"  TextColor="#af95cf" x:Name="edad" x:DataType="x:Int32" HorizontalOptions="Center" MinimumWidthRequest="20" Keyboard="Numeric" WidthRequest="50"/>
+
+
+                    <Label Text="Fecha:" FontSize="18" Padding="30,10,10,5" TextColor="#af95cf"/>
+                    <DatePicker TextColor="#85d0ff" MinimumDate="01/01/1900" MaximumDate="12/31/2100" x:DataType="DatePicker" Format="yy/MM/dd" x:Name="fecha"/>
+
+                </StackLayout>
+
+                <Label Text="Correo" FontSize="18" Padding="10,10,30,5" TextColor="#af95cf"/>
+                <Entry FontSize="18"  TextColor="#85d0ff" x:Name="correo"/>
+
+                <Label Text="Direccion" FontSize="18" Padding="10,10,30,5" TextColor="#af95cf"/>
+                <Entry FontSize="18"  TextColor="#85d0ff" x:Name="direccion"/>
+
+                <Label Text="" FontSize="10" Padding="10,10,10,10" TextColor="#af95cf"/>
+
+                <Button x:Name="btnsalvar"  
+                    Text="Salvar Datos" 
+                    BackgroundColor="#af95cf" 
+                    Margin="70,0,70,0"
+                    FontSize="20" Clicked="btnsalvar_Clicked" TextColor="#351B58"/>
+
+
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
